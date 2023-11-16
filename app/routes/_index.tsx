@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Button from "theme/Button";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,27 +14,13 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
+          <Button>15m Quickstart Blog Tutorial</Button>
         </li>
         <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
+          <Button>Deep Dive Jokes App Tutorial</Button>
         </li>
         <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
+          <Button>Remix Docs</Button>
         </li>
       </ul>
     </div>
